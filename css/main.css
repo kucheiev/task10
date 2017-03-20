@@ -1,0 +1,315 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* styles */
+body {
+    background-color: #eee;
+    font-family: "Roboto", sans-serif;
+}
+.main-header_logo {
+    float: left;
+}
+.main-header_nav {
+    float: right;
+}
+.main-header_nav > li {
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 1s ease;
+    background-color: #000;
+    min-width: 120px;
+    right: 0;
+    z-index: 100;
+}
+body .main-header .dropdown-menu a {
+    color: #ffffff;
+}
+.dropdown-menu li {
+    padding: 5px;
+}
+.dropdown:hover .dropdown-menu {
+    max-height: 1000px;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.main-header {
+    line-height: 51px;
+    margin-top: 50px;
+
+}
+.main-header .main-header_nav a {
+    font-size: 18px;
+    color: rgb(48, 48, 48);
+}
+.main-header a {
+    text-decoration: none;
+}
+.main-header_logo {
+    font-size: 48px;
+    color: rgb(48, 48, 48);
+    font-weight: 900;
+}
+.left-side,
+.right-side {
+    width: 50%;
+    float: left;
+    position: relative;
+    margin-bottom: 150px;
+}
+.slide-large-text {
+    font-size: 150px;
+    font-family: "Raleway";
+    color: rgb(48, 48, 48);
+    font-weight: 900;
+    text-align: right   ;
+    text-transform: uppercase;
+}
+.slide-description {
+    font-size: 24px;
+    color: rgb(48, 48, 48);
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: right;
+    padding-left: 25px;
+}
+.view-btn {
+    font-size: 24px;
+    color: rgb(225, 0, 17);
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+}
+.slider-container .slide {
+    padding-top: 70px;
+}
+.bg-headphones {
+    background-image: url('../img/headphones_with_bg.png');
+    background-repeat: no-repeat;
+    background-size: 900px auto;
+    background-position: 110% -80px;
+}
+.feature-product {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #fff;
+}
+.feature-header {
+    font-size: 48px;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-align: center;
+}
+.feature-description {
+    font-size: 18px;
+    font-family: "Raleway";
+    color: rgb(48, 48, 48);
+    margin-top: 5px;
+    line-height: 1.5;
+    text-align: center;
+}
+.beat_img:hover {
+    background-color: #e10011;
+    background-image: none;
+    cursor: default;
+}
+.beat_img:hover .beat-content {
+    opacity: 1;
+}
+.beat_img .beat-content {
+    transition: 1s;
+    opacity: 0;
+    position: absolute;
+    bottom: 45px;
+    line-height: 1.4;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.beat_img .beat-content span {
+    display: inline-block;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 15px;
+}
+.beat_img {
+    margin: 30px 15px 0;
+    height: 390px;
+    float: left;
+    padding: 35px;
+    position: relative;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.beats-1 {
+    width: calc(66% - 30px);
+    background: url('../img/sect1.jpg') no-repeat center center;
+    background-size: cover;
+}
+.beats-2 {
+    background: url('../img/sect2.jpg') no-repeat center center;
+}
+.beats-3 {
+    background: url('../img/sect5.png') no-repeat center center;
+}
+.beats-4 {
+    background: url('../img/sect4.jpg') no-repeat center center;
+}
+.beats-5 {
+    background: url('../img/sect3.jpg') no-repeat center center;
+}
+.beats-2,
+.beats-3,
+.beats-4,
+.beats-5 {
+    width: calc(33% - 30px);
+    background-size: cover;
+}
+.subcribe-header {
+    font-family: "Raleway";
+    color: #303030;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 100px;
+}
+.subscribe-description {
+    font-family: "Raleway";
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    max-width: 30%;
+    min-width: 50%;
+    margin: 0 auto;
+}
+.subscribe-form {
+    text-align: center;
+    font-size: 0;
+    margin: 40px 0;
+}
+.subscribe-form input {
+    outline: none;
+    padding:18px 0;
+    font-size: 18px;
+    text-indent: 45px;
+    max-width: 500px;
+    width: 35%;
+    border-radius: 25px 0 0 25px;
+    border: none;
+}
+.subscribe-form i,
+.subscribe-form input,
+.subscribe-form button {
+    font-size: 16px;
+}
+.subscribe-form .fa-envelope-o {
+    position: relative;
+    left: 30px;
+}
+.subscribe-form button {
+    padding: 18px 25px;
+    background-color: #e10011;
+    color: #ffffff;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 0 25px 25px 0;
+}
+.footer-social-buttons {
+    list-style: none;
+    margin: 110px auto 30px;
+    text-align: center;
+    font-size: 0;
+}
+.footer-social-btn {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-medium {
+    font-family: "FontAwesome";
+    color: #979797;
+    font-size: 34px;
+    font-weight: 400;
+    position: relative;
+    top: 18px;
+    right: 0px;
+}
+.footer-copyright {
+    font-family: "Raleway";
+    color: #979797;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    padding: 30px; 
+}
+.footer-company {
+    color: #303030;
+}
